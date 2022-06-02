@@ -12,6 +12,7 @@
   --tipical-margin: 30px;
   --tipical-padding: 94px;
   --border-color: 1px solid #eeeeee;
+  --fill-icon: #afb1b8;
 }
 
 body {
@@ -163,7 +164,7 @@ p {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--background-color);
+  background-color: #c4c4c4;
   height: 600px;
   max-width: 1600px;
   margin: 0 auto;
@@ -295,15 +296,109 @@ p {
 
 .section-workers-text {
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
+.workers-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.workers-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.workers-soc-item:last-child {
+  margin-right: 0;
+}
+
+.workers-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workers-soc-icon {
+  fill: var(--fill-icon);
+}
+.workers-soc-link:hover,
+.workers-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.workers-soc-link:hover .workers-soc-icon,
+.workers-soc-link:focus .workers-soc-icon {
+  fill: var(--white-color);
+}
+/* ----------------------------CLIENTS---------------------------- */
+.section-clients {
+  background-color: var(--white-color);
+}
+/* .section-clients-list {
+  display: flex;
+  margin-left: calc(-1 * var(--tipical-margin));
+  margin-top: 50px;
+}
+.section-clients-item {
+  flex-basis: calc(100% / 6 - var(--tipical-margin));
+  margin-left: var(--tipical-margin);
+  padding: 16px 32px;
+} */
+.section-clients-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.section-clients-item {
+  width: 170px;
+  height: 92px;
+  margin-left: var(--tipical-margin);
+}
+.section-clients-item:first-child {
+  margin-left: 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.section-clients-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+.section-clients-icon {
+  fill: var(--fill-icon);
+}
+/* .section-clients-icon:hover,
+.section-clients-icon:focus {
+  fill: var(--accent-color);
+} */
+.section-clients-link:hover .section-clients-icon,
+.section-clients-link:focus .section-clients-icon {
+  fill: var(--accent-color);
+}
+/* .join-soc-link:hover .join-soc-icon,
+.join-soc-link:focus .join-soc-icon {
+  fill: var(--white-color);
+} */
 /* ----------------------------CONTACTS----------------------------- */
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   background-color: var(--background-color);
 }
+.footer .container {
+  display: flex;
+}
+.contacts-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
   color: var(--white-color);
 }
@@ -336,6 +431,58 @@ p {
 .footer-tel:focus {
   color: var(--accent-color);
 }
+
+.join {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  padding-left: 70px;
+}
+/* не заню чи треба */
+.join-title {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.join-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.join-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+
+.join-soc-item:first-child {
+  margin-left: 0;
+}
+
+.join-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.join-soc-icon {
+  fill: var(--white-color);
+}
+.join-soc-link:hover,
+.join-soc-link:focus {
+  background-color: var(--accent-color);
+}
+/* .join-soc-link:hover .join-soc-icon,
+.join-soc-link:focus .join-soc-icon {
+  fill: var(--white-color);
+} */
 
 /* ______________________________PORTFOLIO___________________________ */
 .portfolio {
