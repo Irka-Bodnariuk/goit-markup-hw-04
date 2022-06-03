@@ -164,11 +164,6 @@ p {
   margin-right: 10px;
   fill: currentColor;
 }
-/* .header-mail::before {
-  content: '';
-  width: 16px;
-  height: 12px;
-} */
 /* ----------------------------HERO----------------------------- */
 .hero {
   padding-top: 200px;
@@ -482,10 +477,6 @@ p {
 .join-soc-link:focus {
   background-color: var(--accent-color);
 }
-/* .join-soc-link:hover .join-soc-icon,
-.join-soc-link:focus .join-soc-icon {
-  fill: var(--white-color);
-} */
 
 /* ______________________________PORTFOLIO___________________________ */
 .portfolio {
@@ -516,12 +507,15 @@ p {
   cursor: pointer;
   border-radius: 4px;
   border: transparent;
+  display: block;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -535,6 +529,15 @@ p {
   flex-basis: calc(100% / 3 - var(--tipical-margin));
   margin-left: var(--tipical-margin);
   margin-top: var(--tipical-margin);
+}
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-content {
