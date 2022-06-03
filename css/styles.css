@@ -136,7 +136,7 @@ p {
   color: var(--accent-color);
 }
 
-.header-contact {
+.header-contact-list {
   margin-left: auto;
 }
 
@@ -147,9 +147,11 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 .header-tel {
-  margin-left: 50px;
+  margin-left: var(--tipical-margin);
 }
 
 .header-mail:hover,
@@ -158,7 +160,15 @@ p {
 .header-tel:focus {
   color: var(--accent-color);
 }
-
+.header-contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+/* .header-mail::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+} */
 /* ----------------------------HERO----------------------------- */
 .hero {
   padding-top: 200px;
@@ -225,7 +235,16 @@ p {
   flex-basis: calc(100% / 4 - var(--tipical-margin));
   margin-left: var(--tipical-margin);
 }
-
+.studio-thumb {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-portfolio-color);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: var(--tipical-margin);
+}
 .section-studio-subtitle {
   color: var(--title-color);
   font-weight: 700;
@@ -338,16 +357,7 @@ p {
 .section-clients {
   background-color: var(--white-color);
 }
-/* .section-clients-list {
-  display: flex;
-  margin-left: calc(-1 * var(--tipical-margin));
-  margin-top: 50px;
-}
-.section-clients-item {
-  flex-basis: calc(100% / 6 - var(--tipical-margin));
-  margin-left: var(--tipical-margin);
-  padding: 16px 32px;
-} */
+
 .section-clients-list {
   display: flex;
   justify-content: center;
@@ -361,32 +371,25 @@ p {
 }
 .section-clients-item:first-child {
   margin-left: 0;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 .section-clients-link {
   display: flex;
   width: 100%;
   height: 100%;
-
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--fill-icon);
+  border-radius: 4px;
+  color: var(--fill-icon);
+  fill: currentColor;
 }
-.section-clients-icon {
-  fill: var(--fill-icon);
-}
-/* .section-clients-icon:hover,
-.section-clients-icon:focus {
+
+.section-clients-link:hover,
+.section-clients-link:focus {
+  border-color: var(--accent-color);
   fill: var(--accent-color);
-} */
-.section-clients-link:hover .section-clients-icon,
-.section-clients-link:focus .section-clients-icon {
-  fill: var(--accent-color);
 }
-/* .join-soc-link:hover .join-soc-icon,
-.join-soc-link:focus .join-soc-icon {
-  fill: var(--white-color);
-} */
+
 /* ----------------------------CONTACTS----------------------------- */
 .footer {
   background-color: var(--background-color);
